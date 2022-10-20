@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      >
+  
+  
+  <item
+       android:id="@+id/scanQR_main_menu"
+       android:orderInCategory="100"
+       android:showAsAction="never"
+       android:title="스캔하기" />
+  <item
+       android:id="@+id/list_main_menu"
+       android:orderInCategory="100"
+       android:showAsAction="never"
+       android:title="연락처 리스트" />
+  <item
+       android:id="@+id/explain_main_menu"
+       android:orderInCategory="100"
+       android:showAsAction="never"
+       android:title="앱 유의사항" />
+  
+</menu>

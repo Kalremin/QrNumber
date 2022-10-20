@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#5A8622"
+	android:gravity="center">
+	<TextView
+		android:text="Q넘버쉐어"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/covertext"
+		android:gravity="center"
+		android:textSize="40dp"
+		android:textColor="#ffffffff"
+		android:textColorHighlight="#ff2e88ee"
+		android:shadowColor="#ffc6ff00" />
+
+
+
+</LinearLayout>

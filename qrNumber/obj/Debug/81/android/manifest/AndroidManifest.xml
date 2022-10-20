@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="qrNumber.qrNumber" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="27" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <application android:allowBackup="true" android:icon="@drawable/qrnumber_icon_color" android:label="@string/app_name" android:roundIcon="@drawable/qrnumber_icon_color" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
+    <activity android:label="ContactQRActivity" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.ContactQRActivity" />
+    <activity android:label="@string/app_name" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.CoverActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="ExplainAppActivity" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.ExplainAppActivity" />
+    <activity android:label="MainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.MainActivity" />
+    <activity android:label="NumberListActivity" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.NumberListActivity" />
+    <activity android:label="PopupNameActivity1" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.PopupNameActivity" />
+    <activity android:label="ScangoogleQRActivity" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.ScangoogleQRActivity" />
+    <activity android:label="ScanQRcodeActivity" android:name="md51b31875105d4bc8f9c803af2f3dc05ab.ScanQRcodeActivity" />
+    <service android:name="md5dcb6eccdc824e0677ffae8ccdde42930.KeepAliveService" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.BatteryBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.EnergySaverBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="md5d630c3d3bfb5f5558520331566132d97.ConnectivityBroadcastReceiver" />
+    <provider android:authorities="qrNumber.qrNumber.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
+    </provider>
+    <receiver android:enabled="true" android:exported="false" android:name="md51558244f76c53b6aeda52c8a337f2c37.PowerSaveModeBroadcastReceiver" />
+    <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="md5bb098716dd46c8e113564e6b42b7cde9.ZxingActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="qrNumber.qrNumber.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.qrNumber.qrNumber" />
+      </intent-filter>
+    </receiver>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+  </application>
+</manifest>

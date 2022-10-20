@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+	<include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center">
+		<TextView
+			android:text="-처음으로 실행하면, 메인의 QR코드는 'Nothing'이라는 이름으로 되어있습니다. 자신의 이름을 적어서 확인을 누르시기 바랍니다."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text=" "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text="-앱의 스캐너는 기본 연락처에 들어있는 QR코드(VCARD, MECARD)에도 인식합니다."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text=" "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text="-연락처 QR코드를 인식하면 바로 이름과 전화번호만 저장됩니다."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text=" "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text="-안드로이드 오레오(Android 8.1) 이상으로 개발해서 일부 안드로이드에서는 안될 수 있습니다."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text=" "
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+		<TextView
+			android:text="-이 앱은 포트폴리오를 위해 제작된 앱으로 미숙한 점이 많습니다."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="15dp"
+			android:textColor="#ff000000"
+			/>
+	
+		 
+	</LinearLayout>
+
+</LinearLayout>
